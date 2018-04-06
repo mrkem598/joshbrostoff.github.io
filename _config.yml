@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site TEST"
+title                    : "Josh Brostoff"
 title_separator          : "-"
 name                     : "Josh Brostoff"
-description              : "An amazing website."
+description              : # "An amazing website."
 url                      : "https://joshbrostoff.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
