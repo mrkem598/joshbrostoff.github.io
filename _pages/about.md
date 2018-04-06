@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 last_modified_at: 2018-04-20T18:00:39-04:00
-toc: true
+
 ---
 
 My name is Josh Brostoff, and I’m a Senior ServiceNow Developer living in Boston, MA. I used to work as developer at two ServiceNow customers before transitioning into the consulting space. I’m passionate about ITIL, service management, and all things ServiceNow.
