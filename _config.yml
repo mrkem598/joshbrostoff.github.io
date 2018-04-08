@@ -98,6 +98,7 @@ analytics:
 # Site Author
 author:
   name             : "Josh Brostoff"
+  text             : "Some text here."
   avatar           : "https://media.licdn.com/dms/image/C5603AQFa3YxTSJ7Ujw/profile-displayphoto-shrink_200_200/0?e=1528210800&v=alpha&t=N7pOhe16J2-IrKCRM4CZNY1TH2uHMv6Lc0EyA-eo7f0"
   bio              : "Senior ServiceNow Developer"
   location         : "Boston, MA"
