@@ -7,20 +7,33 @@ Often times when new platform is rolled out or a new business unit is spun up, h
 
 However, this could take an individual several hours or more to manually submit all these requests.
 
-As a solution to this, I have created a transform map script that uses the ServiceNow cart API to automate sumbmitting these requests for all users listed in a CSV, XLS, or XSLX file.  This allows for thousands of REQ’s to be submitted within a matter of seconds, saving valuable time and money for organizations.
+As a solution to this, I have created a transform map script that uses the ServiceNow cart API to automate sumbmission for all users listed in a CSV, XLS, or XSLX file.  This allows for thousands of requests to be submitted within a matter of seconds, saving valuable time and money for organizations.
 
 Another advantage of this script are the safe checks in place to ensure that RITM’s will not be created for inactive users.
 
 The steps to create a bulk upload can be seen below.
 
-1.	Create a new data source and attach the CSV or XLSX file with the required columns to match the variables in the catalog item
+1.	Create a new data source and attach the CSV, XLS or XLSX file with the required columns to match the variables in the catalog item
 2.	Create a new transform map for the data source
-3.	Create an onBefore script where you will paste your code
-4.	Identify the variables on the catalog item which you need to be imported from the CSV file
-5.	Identify the sys_id of the catalog item
-6.	Replace the variables with the correct names on the catalog item and input the sys_id of the catalog item where appropriate below
+3.	Create an onBefore script where you will paste your code (seen below)
+4.	Identify the variables on the catalog item which you need to be imported from the CSV file and replace them in the code below as necessary.
+    ```javascript
+    //set the additional comments and date required variables from the data source
+		var dataSourceComments = source.u_additional_comments;
+		var dataSourceDate = source.u_date_required;
+		
+		cart.setVariable(item, 'comments', dataSourceComments);
+		cart.setVariable(item, 'date_required', dataSourceDate);
+    ```
+5.	Identify the sys_id of the catalog item and replace it as seen below 
+    ```javascript
+    //Catalog Item sys_id which you want to bulk upload
+		var item = cart.addItem('fa05539c6f9bde80c7fe90264b3ee409');
+    ```
 7.	Run the transform and within seconds your requests are created!
 
+
+Here is the complete onBefore script:
 ```javascript
 (function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
 	
@@ -71,12 +84,12 @@ The steps to create a bulk upload can be seen below.
 		
 		//Catalog Item sys_id which you want to bulk upload
 		var item = cart.addItem('fa05539c6f9bde80c7fe90264b3ee409');
-		//set the additional comment variable from the data source
-		var dataSource = source.u_additional_comments;
-		var sourceDate = source.u_date_required;
+		//set the additional comments and date required variables from the data source
+		var dataSourceComments = source.u_additional_comments;
+		var dataSourceDate = source.u_date_required;
 		
-		cart.setVariable(item, 'comments', dataSource);
-		cart.setVariable(item, 'date_required', sourceDate);
+		cart.setVariable(item, 'comments', dataSourceComments);
+		cart.setVariable(item, 'date_required', dataSourceDate);
 
 
 		ignore = true; //used so duplicate RITM's are not created
