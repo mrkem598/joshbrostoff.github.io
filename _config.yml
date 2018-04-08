@@ -266,6 +266,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      classes: wide
   - scope:
       path: ""
       type: pages
@@ -276,4 +277,3 @@ defaults:
       comments: # true
       share: true
       related: true
-      classes: wide
