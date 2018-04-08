@@ -1,13 +1,13 @@
 ---
-title: "Bulk Uploading Catalog Items"
+title: "Bulk Uploading Requests"
 
 ---
 
-Often times when new platform is rolled out or a new business unit is spun up, hundreds or even thousands of users within an organizaiton may require access to systems or hardware. Out of the box, ServiceNow offers a “Bulk Requests” feature, which allows a REQ to be copied for up <20 users.
+Often times when new software is rolled out at an organization, hundreds or even thousands of users are required to submit access requests through ServiceNow for audit and compliance purposes.  This requirement often leads to stakeholders asking "Can I give you all the people that need access in a file and you can upload it into ServiceNow?"
 
-However, this could take an individual several hours or more to manually submit all these requests.
+Out of the box, ServiceNow offers a “Bulk Requests” feature, which allows a request to be copied for up to 20 users.  However, this could take an individual several hours or more to manually submit all these requests.
 
-As a solution to this, I have created a transform map script that uses the ServiceNow cart API to automate sumbmission for all users listed in a CSV, XLS, or XSLX file.  This allows for thousands of requests to be submitted within a matter of seconds, saving valuable time and money for organizations.
+As a solution to this, I have created a transform map script that uses the ServiceNow cart API to automate REQ and RITM sumbmission for all users listed in a CSV, XLS, or XSLX file.  This allows for thousands of requests to be submitted within a matter of seconds, saving valuable time and money for organizations.
 
 Another advantage of this script are the safe checks in place to ensure that RITM’s will not be created for inactive users.
 
@@ -30,7 +30,7 @@ The steps to create a bulk upload can be seen below.
     //Catalog Item sys_id which you want to bulk upload
 		var item = cart.addItem('fa05539c6f9bde80c7fe90264b3ee409');
     ```
-7.	Run the transform and within seconds your requests are created!
+7.	Run the transform, and within seconds your Requests and Requested Items are created.
 
 
 Here is the complete onBefore script:
