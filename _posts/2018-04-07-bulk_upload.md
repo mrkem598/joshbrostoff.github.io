@@ -21,3 +21,93 @@ The steps to create a bulk upload can be seen below.
 6.	Replace the variables with the correct names on the catalog item and input the sys_id of the catalog item where appropriate below
 7.	Run the transform and within seconds your requests are created!
 
+```javascript
+(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+	
+	//set the opened by
+	var openedBy = new GlideRecord("sys_user");
+	openedBy.addQuery("user_name", source.u_opened_by_network_id);
+	openedBy.query();
+	if (openedBy.next()) {
+		var getCurrentCart = cart.getCart();
+		
+	}
+	
+	var setOpenedBy = openedBy.sys_id;
+	var cart = new Cart(null, setOpenedBy);
+	
+	//if the network ID doesnt exist in ServiceNow, dont create a request
+	var existNetID = source.u_requested_for_network_id;
+	var checkExisting = new GlideRecord('sys_user');
+	checkExisting.addQuery("user_name", existNetID);
+	checkExisting.query();
+	if (!checkExisting.next()){
+			ignore = true;
+			gs.log('The network ID ' + existNetID + ' does not exist in ServiceNow.  This record was skipped during the import.');
+	}
+	
+	
+	//if the user isnt active, dont create a request.
+	var networkID = source.u_requested_for_network_id;
+	var checkInactive = new GlideRecord('sys_user');
+	checkInactive.addQuery("user_name", networkID);
+	checkInactive.addQuery("active", false);
+	checkInactive.query();
+	if(checkInactive.next()){
+		if (action == "insert") {
+			ignore = true;
+			gs.log('The user record for ' + checkInactive.name + ' is inactive.  This record was skipped during the import.');
+		}
+	}
+	
+	else {
+		
+	var netID = source.u_requested_for_network_id;
+	var checkActive = new GlideRecord('sys_user');
+	checkActive.addQuery("user_name", netID);
+	checkActive.addQuery("active", true);
+	checkActive.query();
+	while(checkActive.next()){
+		
+		//Catalog Item sys_id which you want to bulk upload
+		var item = cart.addItem('fa05539c6f9bde80c7fe90264b3ee409');
+		//set the additional comment variable from the data source
+		var dataSource = source.u_additional_comments;
+		var sourceDate = source.u_date_required;
+		
+		cart.setVariable(item, 'comments', dataSource);
+		cart.setVariable(item, 'date_required', sourceDate);
+
+
+		ignore = true; //used so duplicate RITM's are not created
+		
+		// set the requested for on the RITM
+		var gr = new GlideRecord("sys_user");
+		gr.addQuery("user_name", source.u_requested_for_network_id);
+		gr.addQuery("active", true);
+		gr.query();
+		if (gr.next()) {
+			var cartGR = cart.getCart();
+			cartGR.requested_for = gr.sys_id;
+			cartGR.update();
+		}
+		
+		//set the requested for and manager of the requested for on the actual catalog item (separate from the RITM)
+		cart.setVariable(item, 'requested_for', gr.sys_id);
+		cart.setVariable(item, 'manager', gr.manager);
+		
+		// query the user table for the requested by user record
+		var setRequestedBy = new GlideRecord("sys_user");
+		setRequestedBy.addQuery("user_name", source.u_requested_by_network_id);
+		setRequestedBy.addQuery("active", true);
+		setRequestedBy.query();
+		if (setRequestedBy.next()) {
+			var userCart = cart.getCart();
+			userCart.update();
+		}
+		
+		//set the requested by on the catalog item
+		cart.setVariable(item, 'requested_by', setRequestedBy.sys_id);
+		
+		var rc = cart.placeOrder();
+```
