@@ -10,7 +10,7 @@ I can’t stress enough how important I believe it is that leaders frequently wa
 
 **Motivator**
 
-I’ve left jobs because of this, and I bet a lot of you reading this have to. If people don’t feel a purpose or sense of excitement behind what they’re doing, forget it. You can’t expect employees to produce quality work and change the world when they aren’t motivated.To be honest, most people would call my job where I look at code for eight hours a day painfully boring. But when you have a leader who is genuinely excited about the work you’re doing and can get you excited, it’s makes all the difference.
+I’ve left jobs because of this, and I bet a lot of you reading this have to. If people don’t feel a purpose or sense of excitement behind what they’re doing, forget it. You can’t expect employees to produce quality work and change the world when they aren’t motivated.To be honest, most people would call my job where I look at code for eight hours a day painfully boring. But when you have a leader who is genuinely excited about the work you’re doing and can get you excited, it makes all the difference.
 
 **Weekly updates**
 
