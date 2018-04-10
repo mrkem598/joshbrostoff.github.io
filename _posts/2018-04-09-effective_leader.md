@@ -2,11 +2,11 @@
 title: "The Effective Leader"
 
 ---
-Four years ago, I graduated college at the height of the second tech boom. Since then, I have worked at various places, ranging from explosive growth tech companies, to a small consulting group. Along the way, I’ve tried to pick out the qualities of what I believe to be the effective leader.
+Four years ago, I graduated college at the height of the second tech boom. Since then, I have worked at various places, ranging from explosive growth tech companies, to a small consulting group. Along the way, I’ve tried to pick out the qualities of what I believe to be an effective leader.
 
 **Walking around the office**
 
-I can’t stress enough how important I believe it is that leaders frequently walk around the office and check in with employees at ALL levels. From my experience, more often than not, leaders at the director level and above get caught up in the wave of all day meetings and political garbage, and forget the human interaction piece. You can’t be a leader without knowing whats going on in the trenches. Even walking around for a quick check in can be a game changer for team moral.
+I can’t stress enough how important I believe it is that leaders frequently walk around the office and check in with employees at ALL levels. From my experience, more often than not, leaders at the director level and above get caught up in the wave of all day meetings and political garbage, and forget the human interaction piece. You can’t be a leader without knowing whats going on in the trenches. Even walking around for a quick check in can be a game changer for team morale.
 
 **Motivator**
 
