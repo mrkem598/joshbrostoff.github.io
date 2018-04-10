@@ -2,7 +2,7 @@
 title: "The Effective Leader"
 
 ---
-Four years ago, I graduated college at the start of the second “tech bubble”. Since then, I have worked at various places, ranging from explosive growth tech companies, to a small consulting group. Along the way, I’ve tried to pick out the qualities of what I believe to be the effective leader.
+Four years ago, I graduated college at the height of the second “tech bubble”. Since then, I have worked at various places, ranging from explosive growth tech companies, to a small consulting group. Along the way, I’ve tried to pick out the qualities of what I believe to be the effective leader.
 
 **Walking around the office**
 
