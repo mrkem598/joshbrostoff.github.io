@@ -1,3 +1,8 @@
+---
+title: "Knowledge Base Content Curation"
+
+---
+
 One of the most difficult challenges with ServiceNow is content curation for the knowledge base.  With thousands of articles to maintain and often only one person reviewing articles for accuracy, articles can become out of date quickly.
 
 It’s great that authors are willing to contribute to help increase incident deflection and drive a culture of self service.  However, when authors don’t update their own articles, it can hurt the organization more than it helps.
