@@ -61,4 +61,5 @@ Create a new event called "knowledge.review.cycle" on the kb_knowledge table
 ```
 
 
+ <a href="/assets/images/Screen Shot 2018-04-15 at 11.40.09 AM.png"><img src="/assets/images/Screen Shot 2018-04-15 at 11.40.09 AM.png"></a>
 
