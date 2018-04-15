@@ -7,7 +7,9 @@ One of the most difficult challenges with ServiceNow is content curation for the
 
 It’s great that authors are willing to contribute to help increase incident deflection and drive a culture of self service.  However, when authors don’t update their own articles, it can hurt the organization more than it helps.
 
-To keep articles up to date and hold knowledge authors accountable, I have automated the process of reminding authors to update their own content.  As a result of this, every 6 months, knowledge authors will receive an email with all the articles they are listed as the author of, reminding them to check their articles for accuracy.
+To keep articles up to date and hold knowledge authors accountable, I have automated the process of reminding authors to update their own content.  As a result of this, every 6 months, knowledge authors will receive an email with all the articles they are listed as the author of, reminding them to check their articles for accuracy like so:
+
+ <a href="/assets/images/Screen Shot 2018-04-15 at 12.27.53 PM.png"><img src="/assets/images/Screen Shot 2018-04-15 at 12.27.53 PM.png"></a>
 
 Here is how to implement this:
 
