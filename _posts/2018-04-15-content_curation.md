@@ -51,7 +51,7 @@ Create a new event called "knowledge.review.cycle" on the kb_knowledge table
 	
 	var vArticle = new GlideRecord('kb_knowledge');
 	vArticle.addQuery('author', event.parm1);
-	vArticle.addQuery('workflow_state', published);
+	vArticle.addQuery('workflow_state', 'published');
 	vArticle.query();
 	while (vArticle.next()) {
 		template.print(" - <a href='" + gs.getProperty("glide.servlet.uri") + vArticle.getLink() + "'>" + vArticle.number + "</a> - " + vArticle.short_description + "\n");
