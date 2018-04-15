@@ -19,11 +19,11 @@ Here is how to implement this:
 ```javascript
 var au = new ArrayUtil();
 var list = [];
-var inc = new GlideRecord('kb_knowledge');
-inc.addQuery('active', true);
-inc.query();
-while (inc.next()) {
-         list.push(inc.getValue('author'));
+var kb = new GlideRecord('kb_knowledge');
+kb.addQuery('active', true);
+kb.query();
+while (kb.next()) {
+         list.push(kb.getValue('author'));
 }
 var shortList = au.unique(list);
 for (var i = 0; i < shortList.length; i++) {
