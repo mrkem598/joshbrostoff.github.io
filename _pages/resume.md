@@ -5,4 +5,4 @@ excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 
 ---
 
-<a href="/assets/images/Josh Brostoff Resume.pdf"><img src="/assets/images/Josh Brostoff Resume.pdf"></a>
+<a href="/assets/images/Josh Brostoff Resume 2.jpg"><img src="/assets/images/Josh Brostoff Resume 2.jpg"></a>
