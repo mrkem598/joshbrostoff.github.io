@@ -24,7 +24,7 @@ Employees navigate to the HR Service Portal within ServiceNow and create a new â
 
 <a href="/assets/images/hr portal.png"><img src="/assets/images/hr portal.png"></a>
 
-From here, end users will be able to select if they want to give or receive feedback.  Depending on the feedback type, a user will receive an email notification, either letting them know their feedback is requested, or they have received feedback.  If feedback is requested, the other user will be able simply enter a work note, all tracked within ServiceNow.  If feedback is given, the record will remain read only after submission.
+From here, end users will be able to select if they want to give or receive feedback.  Depending on the feedback type, a user will receive an email notification, either letting them know their feedback is requested, or they have received feedback.  If feedback is requested, the other user will be able simply enter a work note, all tracked within ServiceNow.  If feedback is given, the record will change to read only after submission.
 
 <a href="/assets/images/record producer.png"><img src="/assets/images/record producer.png"></a>
 
