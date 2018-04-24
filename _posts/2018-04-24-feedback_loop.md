@@ -4,7 +4,7 @@ title: " FeedBack Loop"
 ---
 
 
-The ServiceNow HR application provides various key tools to running a seamless HR operation at an organization.  From knowledge management to employee inquiries, it *almost* provides a full circle solution for human resource management.  However, while using the tool, I came across a major product gap which is essential in HRIS – employee feedback.
+The ServiceNow HR application provides various key tools to running a seamless HR operation at an organization.  From knowledge management to employee inquiries, it *almost* provides a full circle solution for human resource management.  However, while using the tool, I came across a major product gap which is essential in a HRIS – employee feedback.
 
 Giving and receiving feedback is an essential piece to employee performance. 
 
