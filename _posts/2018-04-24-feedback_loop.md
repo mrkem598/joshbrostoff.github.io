@@ -28,7 +28,7 @@ From here, end users will be able to select if they want to give or receive feed
 
 <a href="/assets/images/record producer.png"><img src="/assets/images/record producer.png"></a>
 
-Another advantage of the application is the ability to manage the native reporting functionality offered by ServiceNow.
+Another advantage of the application is the ability to leverage the native reporting functionality offered by ServiceNow.
 
 <a href="/assets/images/dashboard.png"><img src="/assets/images/dashboard.png"></a>
 
