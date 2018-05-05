@@ -1,5 +1,5 @@
 ---
-title: "Kick Starting a Career in ServiceNow Development"
+title: "Kick-Starting a Career in ServiceNow Development"
 
 ---
 
