@@ -17,7 +17,7 @@ Ex. :
 
 -	Change request moves stage to “Implement” through the workflow
 
--      At the same time, a business rule with a script runs which says, “IF stage moves to implement AND all approvals have not been set to “approved”, THEN abort the database action.  
+- At the same time, a business rule with a script runs which says, “IF stage moves to implement AND all approvals have not been set to “approved”, THEN abort the database action.  
 
 I cant tell you the amount of times I’ve seen these lines cause issues between workflows and business rules: 
 
