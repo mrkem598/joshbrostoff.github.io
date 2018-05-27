@@ -43,7 +43,7 @@ The purpose of the “show workflow” UI action is to allow your end users to h
 
 **6. Data Policies**
 
-Data policies are excellent for maintaining data integrity.  Unlike client-side UI policies which can be bypassed by certain user action, data policies run server side.  Data policies enforce required fields even in list views, which will ensure you have quality data for reporting and compliance purposes.  Always use data policies for change management instead of UI policies
+Data policies are excellent for maintaining data integrity.  Unlike client-side UI policies which can be bypassed by certain user action, data policies run server side.  Data policies enforce required fields even in list views, which will ensure you have quality data for reporting and compliance purposes.  Always use data policies for change management instead of UI policies.
 
 **7. Notifications**
 
