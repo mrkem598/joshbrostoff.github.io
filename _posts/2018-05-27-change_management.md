@@ -26,7 +26,7 @@ setAbortAction(true);
 current.state = previous.state;
 ```
 
-**4. Required Fields**
+**3. Required Fields**
 Developers and engineers don’t like documenting changes, especially when they have to fill out thirty required fields on the form.  Before you go making every field on the change form required, ask yourself:
 
 - Is this data absolutely required for compliance?
@@ -35,23 +35,23 @@ Developers and engineers don’t like documenting changes, especially when they 
 
 A feature which I like to add to all change processes is a “Save as Draft” UI action on the change request form.  The use case for this being, when requestors start documenting the change, they often don’t always have the initial data required, but still want to save their change for later editing.
 
-**5. Over Complication**
+**4. Over Complication**
 
 If your change process spans multiple pages with dozens of workflow activities and paths, your change process is likely over complicated.  Over the course of time, it’s easy to let this process grow exponentially.  Don’t let this happen.  It’s important to scrutinize every single enhancement request to modify this workflow.  In fact, I would only recommend modifying change workflows very rarely once you have it in a steady place.
 
 The purpose of the “show workflow” UI action is to allow your end users to have a visual and comprehendible view of where their change is in the process.  When this starts to look like an intricate engineering diagram, people immediately get frustrated with ServiceNow.
 
-**6. Data Policies**
+**5. Data Policies**
 
 Data policies are excellent for maintaining data integrity.  Unlike client-side UI policies which can be bypassed with certain user action, data policies run server side.  Data policies enforce required fields even on list views, which will ensure you have quality data for reporting and compliance purposes.  Always use data policies for change management instead of UI policies.
 
-**7. Notifications**
+**6. Notifications**
 
 When it comes to change management notifications, less is more.  I personally think the OOB notifications provide more than enough detail to end users.  Each additional notification you add on increases the likelihood that change requestors will set up an email filter for these notifications.
 
 A nice feature I like to add when implementing change management is having these emails send from a unique email address and not using the default system mailbox.  Setting the “From” address to your organizational change process email address ensures that previously created end user filters are not honored.
 
-**8. CMDB**
+**7. CMDB**
 
 Quality data in your CMDB is important for all aspects of ITSM.  However, it is an absolutely vital piece of ensuring your organization is practicing effective change management.  Although there is an extensive list of best practices for maintaining quality data in your CMDB, some things to look out for as it relates to change management are:
 
@@ -59,11 +59,11 @@ Quality data in your CMDB is important for all aspects of ITSM.  However, it is 
 -	Ensuring correct CI relationships
 -	Putting rules in place to prevent conflicting changes taking place on related CI’s
 
-**9. UI Actions**
+**8. UI Actions**
 
 The default UI in ServiceNow can be a lot to look at.  A clunky form view in combination with the application navigator is a lot for an end user to visually consume.  When possible, always try and add net new UI actions as related links.  And if you have to add new form buttons, always try and avoid showing more than three at a time on the header and keep the verbiage on the button at a maximum of one to two words.
 
-**10. Stuck Workflows**
+**9. Stuck Workflows**
 
 Every developer or change process owner has probably heard “my change request is stuck” at one point or another.  Often times, the change may not actually be stuck, but rather, a confusing process has been put in place.  To avoid this situation, always follow the rules below:
 
